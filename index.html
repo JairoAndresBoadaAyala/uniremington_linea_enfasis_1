@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Hoja de Vida</title>
-    <style>
+	<style>
+		#enlaces {
+            margin-top: 20px;
+        }
+
+        #enlaces a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;	
+        }
+
+        #enlaces a:hover {
+            background-color: #0056b3;
+        }
+		
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
@@ -36,6 +55,10 @@
         #profile p {
             text-align: justify;
         }
+		
+		#contactame c {
+            text-align: justify;
+        }
 
         #experience li {
             background-color: #fff;
@@ -60,19 +83,68 @@
             margin-right: 10px;
             margin-bottom: 10px;
         }
+		
+		 #redes-sociales {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #redes-sociales a {
+            display: inline-block;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+
+        #redes-sociales img {
+            width: 50px; /* Ajusta el tamaño según tus necesidades */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #redes-sociales img:hover {
+            transform: scale(1.2); /* Efecto de escala al pasar el ratón */
+        }
+		
+		 #wp {
+            margin-top: 20px;
+        }
+
+        #wp a {
+            display: inline-block;
+            margin: 0 50px;
+            text-decoration: none;
+        }
+
+        #wp img {
+            width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #wp img:hover {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
+	
+    <!-- Enlaces a las secciones -->
+    <div id="enlaces">
+        <a href="#profile">Perfil</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contactame">Contactame</a>
+    </div>
     <div id="header">
-        <img src="/home/jairo/Escritorio/linea_enfasis_1/ImagenJairoAndresBoada" alt="Tu Foto">
+        <img src="/home/jairo/Escritorio/linea_enfasis_1/imagenes/jairo.jpeg" />
         <h1>Jairo Andres Boada Ayala</h1>
-        <h1>3136280783</h1>
-        <h1>jairo910731@gmail.com</h1>
     </div>
 
     <div id="profile">
         <h2>Perfil Profesional</h2>
-        <p>Descripción de ti como profesional. Puedes hablar de tus habilidades, experiencia y objetivos.</p>
+        <p>Mi Descripcion</p>
     </div>
 
     <div id="experience">
@@ -102,6 +174,32 @@
             <li>Habilidad 3</li>
             <!-- Agrega más habilidades según sea necesario -->
         </ul>
+    </div>
+	
+	<div id="contactame">
+        <h2>Contactame</h2>
+        <p>Celular: 3136280783</p>
+		<p>WhatsApp: 
+			<div id="wp">
+				 <a aria-label="Chat on WhatsApp" href="https://wa.me/573136280783"><img alt="Chat on WhatsApp" src="/home/jairo/Escritorio/linea_enfasis_1/imagenes/WhatsAppButtonGreenLarge.png" /> <a />
+			</div>
+		</p>
+        <p>Correo: jairo910731@gmail.com</p>
+    </div>
+		
+		
+	
+	<!-- Iconos de redes sociales con imágenes -->
+    <div id="redes-sociales">
+        <a href="https://www.facebook.com/jairoandres.boadaayala" target="_blank">
+            <img src="/home/jairo/Escritorio/linea_enfasis_1/imagenes/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/jairo-andres-boada-ayala-35a899139/" target="_blank">
+            <img src="/home/jairo/Escritorio/linea_enfasis_1/imagenes/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/JairoAndresBoadaAyala" target="_blank">
+            <img src="/home/jairo/Escritorio/linea_enfasis_1/imagenes/github.png" alt="GitHub">
+        </a>
     </div>
 </body>
 </html>
