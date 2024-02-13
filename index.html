@@ -4,151 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Hoja de Vida</title>
-	<style>
-		#enlaces {
-            margin-top: 20px;
-        }
-
-        #enlaces a {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 0 10px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #007BFF;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;	
-        }
-
-        #enlaces a:hover {
-            background-color: #0056b3;
-        }
-		
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 20px;
-            padding: 20px;
-        }
-
-        #header {
-            text-align: center;
-        }
-
-        #header img {
-            max-width: 150px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-
-        h1, h2, h3 {
-            color: #007BFF;
-        }
-
-        h2, h3 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        #profile p {
-            text-align: justify;
-        }
-		
-		#contactame c {
-            text-align: justify;
-        }
-
-        #experience li {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        #skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0;
-            list-style: none;
-        }
-
-        #skills li {
-            background-color: #28a745;
-            color: #fff;
-            border-radius: 5px;
-            padding: 8px 15px;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-		
-		 #redes-sociales {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        #redes-sociales a {
-            display: inline-block;
-            margin: 0 20px;
-            text-decoration: none;
-        }
-
-        #redes-sociales img {
-            width: 50px; /* Ajusta el tamaño según tus necesidades */
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #redes-sociales img:hover {
-            transform: scale(1.2); /* Efecto de escala al pasar el ratón */
-        }
-		
-		 #wp {
-            margin-top: 20px;
-        }
-
-        #wp a {
-            display: inline-block;
-            margin: 0 50px;
-            text-decoration: none;
-        }
-
-        #wp img {
-            width: 300px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #wp img:hover {
-            transform: scale(1.2);
-        }
-    </style>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
     <!-- Enlaces a las secciones -->
     <div id="enlaces">
-        <a href="#profile">Perfil</a>
-        <a href="#experience">Experiencia</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#contactame">Contactame</a>
+        <a href="#profile">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contactme">Contact Me</a>
     </div>
+	
+	<br>
+	<br>
+	<br>
+
     <div id="header">
         <img src="imagenes/jairo.jpeg" />
-        <h1>Jairo Andres Boada Ayala</h1>
+		<h1> Jairo Andres Boada Ayala</h1>
+		<div id="cv">
+			<a href="cv/CV-JairoBoadaAyala.pdf" download="CV-JairoBoadaAyala.pdf">
+				<img src="imagenes/descarga2.png" alt="Icono de PDF">	
+				<span>Haz clic para descargar</span>
+			</a>
+	  	 </div>
     </div>
 
     <div id="profile">
-        <h2>Perfil Profesional</h2>
-        <p>Mi Descripcion</p>
+        <h2>About Me</h2>
+        <p> 
+			Backend Java and Scala developer, with more than 7 years of experience in the
+			software development industry.	
+		</p>
+	    <p> 
+			I am energetic, responsible, committed, dynamic, with critical sense and
+			leadership skills. I like to be in a continuous process of training and growth,
+			willing to take on new challenges and experiences, I like to work in a team and I
+			see problems as a new opportunity to learn and develop innovative solutions.
+		</p>
+		<p> 			 
+			I am a certified Scrum Developer with a Diploma in Advanced Microservices
+			Architecture and devops.
+		</p>
     </div>
 
     <div id="experience">
-        <h2>Experiencia Laboral</h2>
+        <h2>My Experience</h2>
         <ul>
             <li>
                 <h3>Nombre de la Empresa 1</h3>
@@ -165,23 +67,33 @@
             <!-- Puedes agregar más experiencias según sea necesario -->
         </ul>
     </div>
-
-    <div id="skills">
-        <h2>Habilidades y Conocimientos</h2>
+		
+	 <div id="skills">
+        <h2>Skills</h2>
         <ul>
-            <li>Habilidad 1</li>
-            <li>Habilidad 2</li>
-            <li>Habilidad 3</li>
-            <!-- Agrega más habilidades según sea necesario -->
+			  <div id="experience">
+				<h3>Backend</h3>
+				<li>Habilidad 1</li>
+				<li>Habilidad 2</li>
+				<li>Habilidad 3</li>
+			 </div>
         </ul>
+			
+		 <ul>		  
+			 <div id="experience">
+				<h3>Frontend</h3>
+				<li>Habilidad 1</li>
+				<li>Habilidad 2</li>
+				<li>Habilidad 3</li>
+			 </div>
+	  	</ul>
     </div>
 
-	<div id="contactame">
-        <h2>Contactame</h2>
+	<div id="contactme">
+        <h2>Contact Me</h2>
         <p>Celular: 3136280783</p>
         <p>Correo: jairo910731@gmail.com</p>
     </div>
-
 
 
 	<!-- Iconos de redes sociales con imágenes -->
