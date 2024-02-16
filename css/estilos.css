@@ -16,7 +16,6 @@
 	margin: 0 4px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #007BFF;
 	transition: background-color 0.3s ease;	
 }
 
@@ -226,4 +225,49 @@ a:hover span {
 /* Estilos para el footer dentro de la caja */
 footer {
     margin: 0;
+}
+
+.work-info-container {
+	display: flex;
+	justify-content: space-between; /* Distribuye los elementos horizontalmente */
+	flex-wrap: wrap; /* Permite que los elementos se envuelvan a una nueva línea */
+	max-width: 800px; /* Ancho máximo del contenedor */
+	margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.work-info {
+	background-color: #f8f8f8; /* Color de fondo gris */
+	padding: 20px; /* Espaciado interno */
+	text-align: center; /* Centra el texto en el contenedor */
+	margin-right: 10px; /* Espaciado derecho para separar cada experiencia */
+	margin-bottom: 40px; /* Espaciado inferior para separar cada experiencia */
+	width: 200px; /* Ancho fijo para cada cuadro */
+}
+
+
+.work-info img {
+	max-width: 150px;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.work-info p:nth-child(2) {
+	color: #333; /* Color oscuro para el primer párrafo */
+	font-style: italic; /* Texto en cursiva para el segundo párrafo */
+	font-weight: bold; /* Texto en negrita para el primer párrafo */
+	font-size: 18px; /* Tamaño de fuente para el primer párrafo */
+}
+
+
+.work-info p:nth-child(3) {
+	color: #666; /* Color más claro para el segundo párrafo */
+	font-style: italic; /* Texto en cursiva para el segundo párrafo */
+	font-size: 16px; /* Tamaño de fuente para el segundo párrafo */
+}
+
+
+.work-info p:nth-child(4) {
+	color: #333; /* Color oscuro para el tercer párrafo */
+	font-size: 14px; /* Tamaño de fuente para el tercer párrafo */
 }
