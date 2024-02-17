@@ -10,6 +10,7 @@
 <body>
     <!-- Enlaces a las secciones -->
     <div id="enlaces">
+		<div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
         <a href="../index.html">About Me</a>
         <a href="experience.html">Experience</a>
         <a href="skills.html">Skills</a>
@@ -84,5 +85,13 @@
 			<p>&copy; Jairo Boada | All rights reserved</p>
 		</footer>
    </div>
+	
+   <script>
+		function toggleMenu() {
+			var enlaces = document.getElementById("enlaces");
+			enlaces.classList.toggle("abierto");
+		}
+	</script>
+	
 </body>
 </html>

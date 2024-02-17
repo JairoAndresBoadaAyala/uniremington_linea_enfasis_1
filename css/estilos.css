@@ -6,22 +6,63 @@
     text-align: right;
     background-color: #000080;
     padding: 15px;
-    border-radius: 0; /* Bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra ligera */
-    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 #enlaces a {
-	margin-right:10px;
-	margin: 0 4px;
-	text-decoration: none;
-	color: #fff;
-	transition: background-color 0.3s ease;	
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    transition: background-color 0.3s ease;
 }
 
 #enlaces a:hover {
-	background-color: #0056b3;
+    background-color: #0056b3;
 }
+
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+    font-size: 34px;
+    color: #fff;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #enlaces {
+        text-align: center; /* Alinear el texto al centro en la versión de hamburguesa */
+        padding: 20px; /* Ajustar el espaciado en la versión de hamburguesa */
+    }
+
+    #enlaces a {
+        display: inline-block;
+        margin: 1px 0; /* Espaciado entre elementos en la versión de hamburguesa */
+    }
+
+    .hamburguesa {
+        display: block;
+        position: center;
+        top: -4px;
+        right: 20px;
+    }
+
+    #enlaces.abierto a {
+        display: block;
+    }
+
+    /* Ocultar los botones del menú en pantallas más grandes */
+    #enlaces:not(.abierto) a {
+        display: none;
+    }
+
+    .hamburguesa:not(.abierto) {
+        display: block;
+        font-size: 24px; /* Tamaño más pequeño para la hamburguesa en pantallas pequeñas */
+    }
+}
+
 
 html, body {
     margin: 0;
@@ -29,6 +70,7 @@ html, body {
 }
 
 body {
+	overflow-x: hidden; /* Evita que aparezca la barra de desplazamiento horizontal */
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background-color: #ffffff;
 	color: #333;
