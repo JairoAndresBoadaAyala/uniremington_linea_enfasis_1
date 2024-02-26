@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,13 @@
     <div id="enlaces">
 		<a href="../index.html"><img src="../imagenes/jairo.jpeg" alt="Logo"></a>
 		<div class="hamburguesa" onclick="toggleMenu()">&#9776;</div>
-        <a href="experience.html">Experience</a>
-        <a href="skills.html">Skills</a>
-        <a href="contactme.html">Contact Me</a>
+		<a href="experience.html" data-traduccion="experience">Experience</a>
+		<a href="skills.html" data-traduccion="skills">Skills</a>
+		<a href="contactme.html" data-traduccion="contactme">Contact Me</a>	
+		<a>
+			<button onclick="toggleIdioma()" data-traduccion="language">Translate Spanish</button>
+			<script src="../js/translate.js"></script>
+		</a>
     </div>
 	
     <div id="header">
