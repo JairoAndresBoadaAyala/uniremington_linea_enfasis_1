@@ -12,7 +12,8 @@ const traducciones = {
 		'aboutme3': 'Con la certificación de Scrum Developer y un diploma en arquitectura avanzada de microservicios y DevOps, estoy bien equipado para navegar por las complejidades de las prácticas de desarrollo modernas.',
 	    'networksocial': 'Redes Sociales',
 	    'cellphone': 'Celular: 3136280783',
-	    'mail': 'Correo: jairo910731@gmail.com'
+	    'mail': 'Correo: jairo910731@gmail.com',
+		'download': "Descargar"
     },
     'en': {
 		'boton': 'Change Language',
@@ -27,7 +28,8 @@ const traducciones = {
 		'aboutme3': 'Holding certification as a Scrum Developer and possessing a Diploma in Advanced Microservices Architecture and DevOps, I am well-equipped to navigate the complexities of modern development practices.',
         'networksocial': 'Network Social',
 	    'cellphone': 'Cell Phone: 3136280783',
-	    'mail': 'Mail: jairo910731@gmail.com'
+	    'mail': 'Mail: jairo910731@gmail.com',
+		'download': "Download"
     }
 };
 
